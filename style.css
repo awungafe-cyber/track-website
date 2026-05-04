@@ -1,0 +1,39 @@
+:root { 
+    --blue: #0056b3; 
+    --dark: #222; 
+    --light: #f4f4f4; 
+}
+
+* { box-sizing: border-box; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; }
+
+/* Background Image styling for Index and Track pages */
+.bg-image {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2000');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+}
+
+header { background: white; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+header h1 { color: var(--blue); font-size: 24px; }
+nav a { text-decoration: none; color: var(--dark); margin-left: 20px; font-weight: 600; }
+
+.container { padding: 40px 5%; min-height: 80vh; }
+
+/* Transparent cards for pages with background images */
+.bg-image .card { 
+    background: rgba(255, 255, 255, 0.9); 
+    color: var(--dark);
+    padding: 30px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+}
+
+input, select, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; }
+button { width: 100%; padding: 12px; background: var(--blue); color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+button:hover { background: #004494; }
+
+footer { text-align: center; padding: 20px; background: var(--dark); color: white; margin-top: 40px; }
